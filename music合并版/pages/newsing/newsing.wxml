@@ -1,0 +1,10 @@
+<!--pages/newsing/newsing.wxml-->
+<scroll-view wx:for="{{recommends}}" class="usaarea">
+  <view class="item" bindtap="playTap" data-id="{{item.songid}}">
+    <image src="{{item.albumpic_small}}"></image>
+    <view>
+      <text class="sing">{{item.songname}}</text>
+      <text class="songer">歌手:{{item.singername}}</text>
+    </view>
+  </view>
+</scroll-view>

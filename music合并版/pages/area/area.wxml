@@ -1,0 +1,6 @@
+
+<!--pages/area/area.wxml-->
+<view wx:for="{{title}}" wx:for-index="i" class="arearanking" bindtap="arearanking" data-id="{{topid[i]}}" data-text="{{title[i]}}">
+  <image src="{{src[i]}}" style="width: 150px; height: 150px; background-color: #eeeeee;" mode="scaleToFill"></image>
+  <text>{{item}}</text>
+</view>

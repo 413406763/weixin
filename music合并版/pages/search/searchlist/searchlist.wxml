@@ -1,0 +1,14 @@
+
+<!--pages/search/searchlist/searchlist.wxml-->
+<scroll-view class="usaarea" wx:for="{{recommends}}">
+  <view class="item" bindtap="playTap" data-id="{{item.songid}}" >
+    <image src="{{item.albumpic_small}}"></image>
+    <view class="itemlist"> 
+      <text class="sing">{{item.songname}}</text>
+      <text class="songer">songer:{{item.singername}}</text>
+    </view>
+  </view>
+</scroll-view>
+<modal hidden="{{modalHidden2}}" bindconfirm="modalChangeConfirm2" no-cancel="true" data-id="{{valueId}}">
+      <view> 没有搜索到相关内容 </view>
+    </modal>

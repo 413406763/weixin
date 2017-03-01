@@ -1,0 +1,2 @@
+<!--pages/my/bendigequ.wxml-->
+<view style="text-align:center"> {{title}} </view>

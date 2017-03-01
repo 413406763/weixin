@@ -1,0 +1,6 @@
+<view style="text-align:center"> {{title}} </view>
+<view poster="{{item.albumpic_big}}" wx:for="{{movies}}" data-id="{{item.songid}}" bindtap="no1" class="gequ1" data-imgsrc="{{item.albumpic_big}}" data-songname="{{item.songname}}" data-singername="{{item.singername}}">
+  <image src="{{item.albumpic_big}}" class="_on"></image>
+  <text class="_wenzi">{{item.songname}}</text>
+  <text class="_1wenzi">歌手:{{item.singername}}</text>
+  </view>

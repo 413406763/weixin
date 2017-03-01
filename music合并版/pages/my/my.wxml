@@ -1,0 +1,57 @@
+<!--my.wxml-->
+<view class="waikuang">
+  <view class="container">
+    <view  bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    </view>
+  <view class="gongneng">
+  <navigator bindtap="toast"  hover-class="navigator-hover">
+    <view class="on1">
+      <text>我喜欢</text>
+    </view>
+    </navigator>
+    <navigator url="bendigequ" hover-class="navigator-hover">
+    <view class="on1">
+      <text>本地歌曲</text>
+    </view>
+    </navigator>
+    <navigator url="xiazaigequ" hover-class="navigator-hover">
+    <view class="on1">
+      <text>下载歌曲</text>
+    </view>
+    </navigator>
+    <navigator url="zuijinbofang" hover-class="navigator-hover">
+    <view class="on1">
+      <text>最近播放</text>
+    </view>
+    </navigator>
+  </view>
+  <view class="diantai">
+  <view class="biaoti">
+    <view class="left"></view>
+    <text class="wenzi">热门电台</text>
+    <view class="rigth"></view>
+  </view>
+  <view class="list" data-id="js_{{index}}" data-hash="{{song.hash}}" bindtap="playSong" loop="true">
+  
+  <view class="fengmian_a" bindtap="diantai_1">
+    <image class="_fengmian" src="../../img/a.jpg"></image>
+    <text class="fengmian1">累了吗?放松一听!</text>
+  </view>
+  <view class="fengmian_a" bindtap="diantai_2">
+    <image class="_fengmian" src="../../img/b.jpg"></image>
+    <text class="fengmian1">疯狂摇滚</text>
+  </view>
+  <view class="fengmian_a" bindtap="diantai_3">
+    <image class="_fengmian" src="../../img/c.jpg"></image>
+    <text class="fengmian1">伤感情歌</text>
+  </view>
+  <view class="fengmian_a" bindtap="diantai_4">
+    <image class="_fengmian" src="../../img/d.jpg"></image>
+    <text class="fengmian1">欧美R&B</text>
+  </view>
+  </view>
+  </view>
+</view>

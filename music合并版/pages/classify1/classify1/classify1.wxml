@@ -1,0 +1,41 @@
+
+<!--classify.wxml-->
+<view class="header">
+  <view>{{title}}</view>
+</view>
+<view class="page">
+  <view class="search">
+    <view class="scan">
+      <image class="widgets-img" src="/img/ai3.png" mode="aspectFit" />
+    </view>
+    <view class="search-input">
+      <image class="search-icon" src="/img/ath.png" mode="aspectFit" />
+      <input class="serach-text" placeholder="搜索歌曲" />
+    </view>
+    <view class="scan">
+      <image class="widgets-img" src="/img/ahv.png" mode="aspectFit" />
+    </view>
+  </view>
+ </view>
+ <scroll-view scroll-y="true" class="container">
+  <block wx:for="{{recommends}}" wx:for-item="song">
+    <view class="block" bindtap="playTap" data-id="{{song.songid}}">
+      <view class="con-top">
+        <image src="{{song.albumpic_big}}" mode="aspectFill" />
+      </view>
+      <view class="con-bottom">
+        <view class="bot-content">
+          <view>
+            <text class="song-name">{{song.songname}}</text>
+          </view>
+          <view>
+            <text class="song-artists">{{song.singername}}</text>
+          </view>
+        </view>
+        <!--<view class="play">
+          <image src="../../img/more.png" mode="scaleToFill" />
+        </view>-->
+      </view>
+    </view>
+  </block>
+</scroll-view>

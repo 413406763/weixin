@@ -1,0 +1,16 @@
+/* pages/more/more.wxss */
+.arearanking{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-bottom: 1px solid darkgray;
+    
+}
+.arearanking text{
+    line-height: 150px;
+    padding-left: 30px;
+    font-size: 60rpx;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

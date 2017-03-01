@@ -1,0 +1,31 @@
+
+<!--search.wxml-->
+<view class="header">
+  <icon class="search_logo" type="search" size="18" />
+  <input class="search_input" placeholder="搜索:歌手,专辑,歌曲" auto-focus bindinput="bindInput" value="{{inputValue}}" />
+  <icon  class="search_into" type="success" size="18" bindtap="setSearchStorage" data-id="{{inputValue}}"></icon>
+</view>
+
+<view class="history">搜索历史
+<view>
+  <view wx:for="{{getSearch}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx"  class="historylist" bindtap="gitSearchStorage" data-id="{{itemName}}" >
+    <icon type="waiting_circle" color="#9d9d9d" size="18" class="time"/>
+    <view wx:if="{{itemName != ''}}" class="historytext"> {{itemName}} </view>
+</view>
+</view>
+</view>
+<modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+      <view> 是否清除历史记录 </view>
+    </modal>
+<view class="clear" bindtap="clearSearchStorage" >
+  <image src="../../img/垃圾箱.png"></image> 清空历史
+  </view>
+  <modal class="modal" hidden="{{modalHidden2}}" bindconfirm="modalChangeConfirm2" no-cancel="true" >
+      <view> 你还没有填写任何内容 </view>
+    </modal>
+ <!--<view style="width=100px;heightht=30px">
+  <view>1
+ </view>   
+  <view>2
+ </view>   
+ </view>   -->

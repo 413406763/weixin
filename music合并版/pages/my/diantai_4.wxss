@@ -1,0 +1,27 @@
+.gequ1{
+    margin-top: 20rpx;
+    display: inline-flex;
+    flex-wrap:wrap;
+    width: 50%;
+    justify-content: center;
+}
+._on{
+    width: 300rpx;
+    height: 300rpx;
+}
+._wenzi{
+width: 100%;
+height: 65rpx;
+font-size:30rpx;
+display: inline-flex;
+justify-content: center;
+line-height: 30px;
+overflow:hidden;
+margin-left: 20rpx;
+}
+._1wenzi{
+display: inline-flex;
+justify-content: center;
+font-size:30rpx;
+margin-left: 20rpx;
+}

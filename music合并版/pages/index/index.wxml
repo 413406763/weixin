@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="header" wx:if="{{bol}}">
+  <view>{{title}}</view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swi">
+  <view wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image img_style" bindtap="swiper_play" data-id="{{index}}"/>
+    </swiper-item>
+  </view>
+</swiper>
+<view class="nav">
+<view class="nav_logo" bindtap="logoTap1">
+<image src="../../img/dongman3.png"/> 
+<text>动漫</text>
+</view>
+<view class="nav_logo" bindtap="logoTap2">
+<image src="../../img/qingyinyue3.png"/>
+<text>轻音</text>
+</view>
+<view class="nav_logo" bindtap="logoTap3">
+<image src="../../img/yaolanqu3.png"/> 
+<text>摇篮</text>
+</view>
+<view class="nav_logo" bindtap="logoTap4">
+<image src="../../img/DJ2.png"/>
+<text> D J</text>
+</view>
+</view>
+
+<scroll-view scroll-y="true" class="container">
+<block wx:for="{{recommends}}" wx:for-item="song">
+<view class="block" bindtap="playTap" data-id="{{song.songid}}">
+<view class="left">
+<image src="{{song.albumpic_big}}" mode="aspectFill"/>
+</view>
+<view class="right">
+<view class="content">
+<view>
+<text class="song-name">{{song.songname}}</text>
+</view>
+<view>
+<text class="song-artists">{{song.singername}}</text>
+</view>
+</view>
+<view class="play">
+<image src="../../img/more.png" mode="scaleToFill"/>
+</view>
+</view>
+</view>
+</block>
+</scroll-view>
+

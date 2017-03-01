@@ -1,0 +1,21 @@
+
+<!--ranking.wxml-->
+<view class="header" bindtap="search">
+  <icon class="search_logo" type="search" size="18" />
+  <input class="search_input" value="搜索:歌手,专辑,歌曲" />
+</view>
+<view class="flex-wrp">
+  <button class="flex-item bc_green" bindtap="area">地区</button>
+  <button class="flex-item bc_green" bindtap="gothis" data-id="23" data-text="歌手">歌手</button>
+  <button class="flex-item bc_green" bindtap="gothis" data-id="4" data-text="流行">流行</button>
+  <button class="flex-item bc_green" bindtap="more">更多</button>
+</view>
+<scroll-view  >
+<view class="search-li" wx:for="{{text}}" wx:for-index="i" bindtap="gothis" data-id="{{topid[i]}}" data-text="{{text[i]}}">
+  <view class="name">{{item}}</view>
+  <view class="content">
+    <image class="topic" src="{{src[i]}}" mode="scaleToFill"></image>
+    <text class="little">{{title[i]}}</text>
+  </view>
+</view>
+</scroll-view>

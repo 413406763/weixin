@@ -1,0 +1,181 @@
+.search{
+	display: flex;
+  	flex-direction: row;
+  	height: 50rpx;
+	align-items: center;
+}
+
+.search .scan{
+	display: flex;
+  	flex-direction: column;
+	align-items: center;
+	width: 10%;
+}
+
+.search .search-input{
+	padding: 5rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 80%;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+	align-items: center;
+}
+.search-icon{
+	width: 30rpx;
+	height: 30rpx;
+}
+
+.search-text{
+	top:0px;
+	padding:0px;
+	left: 0rpx;
+	right: 0rpx;
+}
+
+.widgets-img{
+	width: 40rpx;
+	height: 40rpx;
+}
+
+.widgets-title{
+	color: #888888;
+    font-size: 1px;
+}
+
+.big-logo{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.logoinfo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:150rpx; 
+	height: 150rpx; 
+}
+
+.logotext{
+	color: #aaa;
+	font-size: 22rpx;
+}
+
+.page-margin{
+	background: #F0F0F0;
+	border-bottom: 2px solid #eee;
+	margin-left: 10rpx;
+	margin-right: 10rpx;
+	margin-top: 10rpx;
+}
+
+.page-row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.page-column{
+	color: #888888;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.draw__line{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 2rpx;
+    background-color: #F0F0F0;
+}
+
+.content-img{
+	flex-direction: column;
+	align-items: center;
+	width: 40%;
+	float: left;
+}
+
+    view.text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 10px 10px 12px;
+    font-size: 15px;
+    color: #656565;
+}
+
+view.text:before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    left: -5px;
+    width: 2px;
+    height: 100%;
+    background-color: #09bb07;
+}
+
+.line_flag {
+    width: 3px;
+    height: 100%;
+    height: 15px;
+    display: inline-block;
+    background-color: #f9f027;
+}
+
+view.text text {
+    margin-left: 10px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.venues_box {
+    padding: 0 10rpx;
+}
+
+.venues_item {
+    display: inline-block;
+    width: 49%;
+    margin: 0 0.5%;
+}
+
+.venues_item image{
+    width: 100%;
+    height: 120px;
+}
+
+.content{
+	width: 100%;
+	margin: 0.5% 0.5%;
+	clear: both;
+}
+
+.content image{
+	width: 180rpx;
+	height: 180rpx;
+	float: left;
+}
+
+.content-item{
+	width: 70%;
+	height: 200rpx;
+	float: left;
+}
+.content-item view{
+	width: 45%;
+	height: 80rpx;
+	float: left;
+	margin: 0 0 3% 3%;
+	text-align: center;
+	line-height: 90rpx;
+	background: #eee;
+	border-right: 1px solid #aaa;
+}

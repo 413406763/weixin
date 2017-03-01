@@ -1,0 +1,28 @@
+<!--pages/index/nav_logo/yaolanqu/yaolanqu.wxml-->
+<!--pages/index/nav_logo/qingyinyue/qingyinyue.wxml-->
+<view class="header" wx:if="{{bol}}">
+  <view>{{title}}</view>
+</view>
+
+<scroll-view scroll-y="true" class="container">
+<block wx:for="{{recommends}}" wx:for-item="song">
+<view class="block" bindtap="playTap" data-id="{{song.songid}}">
+<view class="left">
+<image src="{{song.albumpic_big}}" mode="aspectFill"/>
+</view>
+<view class="right">
+<view class="content">
+<view>
+<text class="song-name">{{song.songname}}</text>
+</view>
+<view>
+<text class="song-artists">{{song.singername}}</text>
+</view>
+</view>
+<view class="play">
+<image src="../../../../img/more.png" mode="scaleToFill"/>
+</view>
+</view>
+</view>
+</block>
+</scroll-view>

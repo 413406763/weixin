@@ -1,0 +1,37 @@
+/* pages/newsing/newsing.wxss */
+.usaarea {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  padding: 0px 10px;
+  border-bottom: 1px solid darkgray;
+}
+
+.item image {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+}
+
+.item view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.sing {
+  padding-top: 6%;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.songer {
+  padding-top: 4%;
+  font-size: 14px;
+  color: darkgrey;
+  font-family: Arial;
+}

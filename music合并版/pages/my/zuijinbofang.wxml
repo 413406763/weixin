@@ -1,0 +1,11 @@
+
+<!--pages/my/bendigequ.wxml-->
+<view wx:for="{{currentIds}}" data-id="{{item.id}}" class="on1" bindtap="no2">
+  <view class="gong">
+    <image class="play-bg" mode="aspectFill" src="{{item.imgsrc}}" class="on4"></image>
+  </view>
+  <view class="className">
+    <view style="text-align:center" class="on2">歌曲名：{{item.songname}}</view>
+    <view style="text-align:center" class="on3"> 歌手名：{{item.singername}} </view>
+  </view>
+</view>

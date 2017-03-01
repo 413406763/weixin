@@ -1,0 +1,112 @@
+.waikuang{
+    width: 100%;
+  position: relative;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: center;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.gongneng{
+    width: 97%;
+   
+    border: 5px solid gainsboro;
+    margin-top: 20rpx;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.gongneng navigator{
+    width: 50%;
+    height: 150rpx;
+    }
+wx-navigator view{
+    width: 100%;
+    height: 100%;
+    border: 1px solid silver;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+}
+.gongneng view text{
+     color: black;
+}
+.diantai{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-top: 50rpx;
+}
+.biaoti{
+    width: 100%;
+    height: 20rpx;
+    display: inline-flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.left{
+    width: 35%;
+    height: 30%;
+    background-color: black;
+}
+.rigth{
+    width: 35%;
+    height: 30%;
+    background-color: black;
+}
+.wenzi{
+    font-size: 30rpx;
+}
+
+.list{
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 50rpx;
+}
+.fengmian_a{
+    margin-top: 10rpx;
+    margin-bottom: 20rpx;
+    width: 48%;
+    display: inline-flex;
+    flex-direction:column;
+    justify-content:center;
+}
+._fengmian{
+    width: 350rpx;
+    height: 350rpx;
+}
+.fengmian1{
+    margin-top: 10rpx;
+    font-size: 30rpx;
+     display: inline-flex;
+    justify-content:center;
+}
+
+    
